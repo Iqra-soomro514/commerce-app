@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// App.js
 import './App.css';
+import Cartlist from './components/cart-list/cartlist.jsx';
+import PrimarySearchAppBar from './components/header.jsx';
+import Product from './components/product/product.jsx';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+   <PrimarySearchAppBar/>
+   <Product/>
     </div>
   );
 }
